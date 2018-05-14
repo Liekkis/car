@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9e9b9b"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/user_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:text="用户名：yangli"
+        android:textSize="25sp"
+        />
+    <TextView
+        android:id="@+id/car_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:text="车牌照：川A：99999"
+        android:textSize="25sp"/>
+    <TextView
+        android:id="@+id/car_in_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:text="进入时间：2018/05/15/17:25:30"
+        android:textSize="25sp"/>
+</LinearLayout>
