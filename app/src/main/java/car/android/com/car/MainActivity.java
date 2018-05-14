@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         login.setOnClickListener(this);
         editName = findViewById(R.id.username1);
         editPW = findViewById(R.id.pw);
+        editPW.setText("");
         //初始化bmob数据库
         BmobTools.onCreate(this, "09da0e466a5420e12f258ef48d1ded9b");
     }
