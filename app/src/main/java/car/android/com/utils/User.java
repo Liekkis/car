@@ -9,6 +9,16 @@ public class User extends BmobObject{
     private String answer;
     private String carId;
 
+    public void setAccountBalance(String accountBalance) {
+        AccountBalance = accountBalance;
+    }
+
+    public String getAccountBalance() {
+
+        return AccountBalance;
+    }
+
+    private String AccountBalance;
     public String getUsername() {
         return username;
     }

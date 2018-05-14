@@ -24,7 +24,7 @@ public class CarIn extends Activity{
         public void run() {
 
             currentSecond = currentSecond + 1000;
-            time.setText(TimeUtils.getFormatHMS(currentSecond));
+            time.setText("停车时间："+TimeUtils.getFormatHMS(currentSecond));
             if (!isPause) {
                 //递归调用本runable对象，实现每隔一秒一次执行任务
                 mhandle.postDelayed(this, 1000);
