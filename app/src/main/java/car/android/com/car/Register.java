@@ -111,4 +111,14 @@ public class Register extends Activity implements View.OnClickListener {
         this.setResult(1, intent);
         finish();
     }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d("yangli", "onStop");
+        Intent intent = new Intent();
+        intent.putExtra("username", "");
+        this.setResult(1, intent);
+
+    }
 }

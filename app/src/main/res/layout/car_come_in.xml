@@ -27,4 +27,10 @@
         android:paddingTop="15dp"
         android:text="进入时间：2018/05/15/17:25:30"
         android:textSize="25sp"/>
+    <TextView
+        android:id="@+id/car_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:textSize="25sp"/>
 </LinearLayout>

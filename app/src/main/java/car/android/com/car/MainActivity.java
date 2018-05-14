@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 import java.util.List;
 
+import car.android.com.tools.BmobTools;
 import car.android.com.utils.User;
 import cn.bmob.v3.BmobQuery;
 import cn.bmob.v3.exception.BmobException;
@@ -20,7 +21,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button login;
     private EditText editName;
     private EditText editPW;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             if (list.size() > 0) {
                                 Toast.makeText(getBaseContext(),"登录成功",Toast.LENGTH_LONG).show();
                                 Intent intent1 = new Intent(getBaseContext(),CarIn.class);
-                                intent1.putExtra("user",list.get(0));
+                                BmobTools.user = list.get(0);
                                 startActivity(intent1);
                             }else{
                                 Toast.makeText(getBaseContext(),"用户名或密码错误，请重新登录",Toast.LENGTH_LONG).show();
