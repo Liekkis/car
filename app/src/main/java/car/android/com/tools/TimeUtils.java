@@ -8,4 +8,9 @@ public class TimeUtils {
         int h=(int) (time/3600);//秒
         return String.format("%02d:%02d:%02d",h,m,s);
     }
+    public static String getMoney(long time){
+        time = time/1000;
+        long money = time * 1/60;
+        return String.valueOf(money);
+    }
 }
