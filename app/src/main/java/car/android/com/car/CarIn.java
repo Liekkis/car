@@ -52,7 +52,7 @@ public class CarIn extends Activity{
         SimpleDateFormat format=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Date d1=new Date(time1);
         String t1=format.format(d1);
-        timein.setText(t1);
+        timein.setText("进入时间："+t1);
 
         time = findViewById(R.id.car_time);
         mhandle.postDelayed(timeRunable,0);
