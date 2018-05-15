@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         if (e == null) {
                             if (list.size() > 0) {
                                 Toast.makeText(getBaseContext(),"登录成功",Toast.LENGTH_LONG).show();
-                                Intent intent1 = new Intent(getBaseContext(),CarIn.class);
+                                Intent intent1 = new Intent(getBaseContext(),UserInfo.class);
                                 BmobTools.user = list.get(0);
                                 startActivity(intent1);
                             }else{

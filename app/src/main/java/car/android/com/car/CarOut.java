@@ -41,4 +41,10 @@ public class CarOut extends Activity {
         money.setText(BmobTools.carStop.getMoney());
 
     }
+
+    @Override
+    public void onBackPressed() {
+        finishAffinity();
+        super.onBackPressed();
+    }
 }
