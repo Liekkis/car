@@ -74,6 +74,8 @@ public class UserInfo extends Activity implements View.OnClickListener {
                 startActivity(intent);
                 break;
             case R.id.car_stop:
+                Intent mintent = new Intent(this,StopInfo.class);
+                startActivity(mintent);
                 break;
         }
     }
