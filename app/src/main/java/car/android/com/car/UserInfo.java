@@ -97,4 +97,9 @@ public class UserInfo extends Activity implements View.OnClickListener {
         });
         return count;
     }
+
+    @Override
+    public void onBackPressed() {
+        return;
+    }
 }
