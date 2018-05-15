@@ -1,12 +1,10 @@
 package car.android.com.car;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.Message;
 import android.support.annotation.Nullable;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -17,12 +15,10 @@ import java.util.Date;
 
 import car.android.com.tools.BmobTools;
 import car.android.com.tools.TimeUtils;
-import car.android.com.utils.CarStop;
-import cn.bmob.v3.BmobObject;
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.SaveListener;
 
-public class CarIn extends Activity implements View.OnClickListener {
+public class CarIn extends AppCompatActivity implements View.OnClickListener {
     private TextView username;
     private TextView carid;
     private TextView timein;

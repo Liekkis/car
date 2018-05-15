@@ -1,8 +1,8 @@
 package car.android.com.car;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 import car.android.com.tools.BmobTools;
@@ -11,7 +11,7 @@ import car.android.com.tools.BmobTools;
  * Created by yangli on 2018/5/15.
  */
 
-public class CarOut extends Activity {
+public class CarOut extends AppCompatActivity {
     private TextView username;
     private TextView carid;
     private TextView timein;

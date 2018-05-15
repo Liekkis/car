@@ -1,11 +1,11 @@
 package car.android.com.car;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -16,7 +16,7 @@ import car.android.com.utils.User;
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.SaveListener;
 
-public class Register extends Activity implements View.OnClickListener {
+public class Register extends AppCompatActivity implements View.OnClickListener {
     private EditText username;
     private EditText pwd;
     private EditText question;

@@ -1,10 +1,10 @@
 package car.android.com.car;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
@@ -20,7 +20,7 @@ import cn.bmob.v3.BmobQuery;
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.FindListener;
 
-public class StopInfo extends Activity{
+public class StopInfo extends AppCompatActivity {
     private ListView listView;
     private TextView textcar;
     List<CarStop> mlist = null;

@@ -16,33 +16,38 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Register">
+        <activity android:name=".Register"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.register"/>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".CarIn"
-            android:taskAffinity=".car">
+            android:taskAffinity=".car"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.CarIn"/>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".CarOut"
-            android:taskAffinity=".car">
+            android:taskAffinity=".car"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.CarOut"/>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".UserInfo">
+        <activity android:name=".UserInfo"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.userinfo"/>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".StopInfo">
+        <activity android:name=".StopInfo"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.StopInfo"/>
                 <category android:name="android.intent.category.LAUNCHER" />

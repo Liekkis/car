@@ -1,11 +1,11 @@
 package car.android.com.car;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -22,7 +22,7 @@ import cn.bmob.v3.listener.FindListener;
  * Created by yangli on 2018/5/15.
  */
 
-public class UserInfo extends Activity implements View.OnClickListener {
+public class UserInfo extends AppCompatActivity implements View.OnClickListener {
     private TextView name;
     private TextView carid;
     private TextView stopcount;
